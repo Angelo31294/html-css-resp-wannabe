@@ -127,8 +127,9 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
- 
+
  /* -- 768px -- */
+
 @media screen and (max-width:768px) {
     
     .container{
@@ -137,3 +138,25 @@ img {
 }
 
 /* -- 480px -- */
+
+@media screen and (max-width: 480px) {
+    
+    .container{
+        max-width: 480px;
+        display: block;
+    }
+
+    .col-left, .col-right, .row{
+        display: block;
+    }
+
+    .lesson, .col, .card, img{
+        width: 85vw;
+        text-align: center;
+    }
+
+    .why-us, .col-left, .col-right{
+        width: 100%;
+        margin: auto;
+    }
+}
