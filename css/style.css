@@ -130,10 +130,10 @@ img {
 
  /* -- 768px -- */
 
-@media screen and (max-width:768px) {
+@media screen and ( max-width: 768px ) {
     
     .container{
-        max-width: 768px;
+        max-width: 100%;
     }
 }
 
@@ -141,22 +141,27 @@ img {
 
 @media screen and (max-width: 480px) {
     
-    .container{
-        max-width: 480px;
-        display: block;
+    .row{
+        flex-wrap: wrap;
     }
 
-    .col-left, .col-right, .row{
-        display: block;
-    }
-
-    .lesson, .col, .card, img{
-        width: 85vw;
-        text-align: center;
-    }
-
-    .why-us, .col-left, .col-right{
+    .lessons .col, .steps .col, .why-us .col-right, .col .col-left{
         width: 100%;
-        margin: auto;
+    }
+
+    .col:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    .steps{
+        margin: 0;
+    }
+
+    .lessons, .why-us{
+        padding-bottom: 3rem;
+    }
+
+    .why-us{
+        background-color: #222;
     }
 }
